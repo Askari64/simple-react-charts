@@ -1,3 +1,4 @@
+import { BarChartComponent, FilteredBarChart } from "./Charts/BarChartComponents";
 import { LineChartComponent, FilteredLineChart } from "./Charts/LineChartComponents";
 function App() {
   return (
@@ -14,6 +15,12 @@ function App() {
             </div>
             <div className="text-center bg-[#669bbc] rounded-xl p-6">
               <FilteredLineChart />
+            </div>
+            <div className="text-center bg-[#669bbc] rounded-xl p-6">
+              <BarChartComponent />
+            </div>
+            <div className="text-center bg-[#669bbc] rounded-xl p-6">
+              <FilteredBarChart />
             </div>
           </div>
         </div>
