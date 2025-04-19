@@ -64,7 +64,7 @@ export function FilteredLineChart() {
             <Tooltip />
             <Legend />
             <Line
-              type="monotone"
+              type="linear"
               dataKey={filter}
               stroke="#8884d8"
               activeDot={{ r: 8 }}
