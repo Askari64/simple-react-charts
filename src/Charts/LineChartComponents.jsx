@@ -75,7 +75,7 @@ export function FilteredLineChart() {
       </div>
 
       <div className="flex items-center gap-4 mt-4">
-        <label className="text-lg font-medium">Select Data:</label>
+        <label className="text-md font-medium">Select Data:</label>
         <select
           value={filter}
           onChange={(e) => setFilter(e.target.value)}
