@@ -23,14 +23,7 @@ const data = [
 
 export function LineChartComponent() {
   return (
-    <div
-      style={{
-        borderRadius: "1rem",
-        boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
-        padding: "1rem",
-        backgroundColor: "#fff",
-      }}
-    >
+    <div className="rounded-2xl shadow-md p-4 bg-white">
       <ResponsiveContainer width="100%" height={300}>
         <LineChart data={data}>
           <CartesianGrid strokeDasharray="3 3" />
@@ -61,7 +54,7 @@ export function FilteredLineChart() {
   const [filter, setFilter] = useState("sales");
 
   return (
-    <div className=" py-2">
+    <>
       <div className="rounded-2xl shadow-md p-4 bg-white">
         <ResponsiveContainer width="100%" height={300}>
           <LineChart data={data}>
@@ -92,6 +85,6 @@ export function FilteredLineChart() {
           <option value="expenses">Expenses</option>
         </select>
       </div>
-    </div>
+    </>
   );
 }
