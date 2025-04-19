@@ -1,3 +1,4 @@
+import { AreaChartComponent, FilteredAreaChart } from "./Charts/AreaChartComponents";
 import { BarChartComponent, FilteredBarChart } from "./Charts/BarChartComponents";
 import { LineChartComponent, FilteredLineChart } from "./Charts/LineChartComponents";
 function App() {
@@ -21,6 +22,12 @@ function App() {
             </div>
             <div className="text-center bg-[#669bbc] rounded-xl p-6">
               <FilteredBarChart />
+            </div>
+            <div className="text-center bg-[#669bbc] rounded-xl p-6">
+              <AreaChartComponent />
+            </div>
+            <div className="text-center bg-[#669bbc] rounded-xl p-6">
+              <FilteredAreaChart />
             </div>
           </div>
         </div>
